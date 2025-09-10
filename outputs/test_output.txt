@@ -1,0 +1,43 @@
+```json
+{
+  "current_balance": 127000,
+  "current_interest": 230.57,
+  "simulations": [
+    {
+      "type": "upgrade_level",
+      "new_level": "Level3",
+      "new_tier": "Tier3",
+      "new_avg_balance": 127000,
+      "total_interest": 230.57,
+      "incremental_gain_vs_current": 0.00,
+      "explanation": "No change because the account is already at the highest level."
+    },
+    {
+      "type": "top_up_tier_cap",
+      "new_level": "Level3",
+      "new_tier": "Tier3",
+      "new_avg_balance": 150000,
+      "total_interest": 318.48,
+      "incremental_gain_vs_current": 87.91,
+      "explanation": "Increasing the balance to the Tier3 cap of 150,000 raises the balance portion in Tier3, which has the highest bonus rate, leading to a higher total interest."
+    },
+    {
+      "type": "upgrade_tier",
+      "new_level": "Level3",
+      "new_tier": "Tier3",
+      "new_avg_balance": 127000,
+      "total_interest": 230.57,
+      "incremental_gain_vs_current": 0.00,
+      "explanation": "The account is already at the highest tier; no change."
+    }
+  ],
+  "recommendation": {
+    "type": "top_up_tier_cap",
+    "steps": [
+      "Ensure sufficient funds are available to raise the account balance to 150,000.",
+      "Transfer or deposit the required amount into the account.",
+      "Confirm the updated balance and that the account remains at Level3."
+    ]
+  }
+}
+```

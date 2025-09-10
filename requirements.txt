@@ -1,0 +1,11 @@
+pandas
+numpy
+langchain
+dotenv
+openai
+ollama
+langchain_community
+langflow
+chromadb
+steamlit
+watchdog

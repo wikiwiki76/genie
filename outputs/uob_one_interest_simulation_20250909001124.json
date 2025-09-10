@@ -1,0 +1,78 @@
+[
+  {
+    "snap_date": "2025-08-31",
+    "current": {
+      "avg_balance": 120000,
+      "level": "Level 1",
+      "tier": "Tier 2",
+      "days_in_month": 31,
+      "days_in_year": 365,
+      "base_interest_month": 5.09,
+      "bonus_interest_month_breakdown": {
+        "tier_1_amount": 38.21,
+        "tier_2_amount": 0.0,
+        "tier_3_amount": 0.0
+      },
+      "total_interest_month": 43.3
+    },
+    "simulations": [
+      {
+        "name": "Upgrade Level",
+        "assumption": "Increase to the next level if not Level 3",
+        "new_level": "Level 2",
+        "new_tier": "Tier 2",
+        "new_avg_balance": 120000,
+        "base_interest_month": 5.09,
+        "bonus_interest_month_breakdown": {
+          "tier_1_amount": 60.46,
+          "tier_2_amount": 82.78,
+          "tier_3_amount": 0.0
+        },
+        "total_interest_month": 148.33,
+        "incremental_gain_vs_current": 105.03,
+        "explanation": "Base interest remains 5.09. Bonus: 75,000 at 0.95% gives 60.46, next 50,000 at 1.95% gives 82.78. Total bonus 143.24. Total interest 148.33. Gain = 148.33 - 43.30 = 105.03."
+      },
+      {
+        "name": "Top-up to Tier Cap",
+        "assumption": "Increase balance up to cap of current tier",
+        "new_level": "Level 1",
+        "new_tier": "Tier 2",
+        "new_avg_balance": 125000,
+        "base_interest_month": 5.3,
+        "bonus_interest_month_breakdown": {
+          "tier_1_amount": 38.21,
+          "tier_2_amount": 0.0,
+          "tier_3_amount": 0.0
+        },
+        "total_interest_month": 43.51,
+        "incremental_gain_vs_current": 0.21,
+        "explanation": "Base increases to 5.30. Bonus unchanged at 38.21. Total 43.51. Gain = 43.51 - 43.30 = 0.21."
+      },
+      {
+        "name": "Upgrade Tier",
+        "assumption": "Increase to the next tier if not Tier 3",
+        "new_level": "Level 1",
+        "new_tier": "Tier 3",
+        "new_avg_balance": 120000,
+        "base_interest_month": 5.09,
+        "bonus_interest_month_breakdown": {
+          "tier_1_amount": 38.21,
+          "tier_2_amount": 0.0,
+          "tier_3_amount": 0.0
+        },
+        "total_interest_month": 43.3,
+        "incremental_gain_vs_current": 0.0,
+        "explanation": "Base and bonus remain unchanged; no gain."
+      }
+    ],
+    "recommended_action": {
+      "chosen_scenario": "Upgrade Level",
+      "reasoning": "The Upgrade Level scenario yields the first positive incremental gain (105.03) and is highest priority.",
+      "next_steps": [
+        "Ensure at least 3 GIRO debit transactions this month to meet Level 2 eligibility.",
+        "Maintain card spend of at least S$500.",
+        "Confirm your salary credit remains above S$1,600 (or stay at Level 2 if it does not), then your account will automatically roll up to Level 2 for the next interest calculation."
+      ]
+    }
+  }
+]

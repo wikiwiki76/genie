@@ -1,0 +1,3 @@
+customer_id,customer_name,snap_date,avg_balance,card_spend,salary_credit,giro_count
+U001,ABC,31/8/2025,127000,700,2000,3
+U002,DEF,31/8/2025,70000,500,0,4
